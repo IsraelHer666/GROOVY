@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  /*mobile styles*/
+  * {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --backColor: rgb(0, 0, 0);
+  }
+  article .boxes {
+    color: #ffff !important;
+  }
+  body {
+    background-color: var(--backColor);
+    /* background-image: url(../img/fondo.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  body .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #070707;
+  }
+  body .mobile p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5em;
+    color: #fdf5f5;
+    font-weight: 600;
+    padding-top: 5%;
+    margin-right: 8%;
+  }
+  body .mobile img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 160px;
+    padding-top: 5%;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "box1  box2    box3";
+    height: 30vw;
+    width: 100%;
+    background-color: rgb(143, 163, 163);
+  }
+  .box1 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: box1;
+  }
+  .box2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: box2;
+  }
+  .box3 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: box3;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 20);
+    grid-template-areas: "box4  box5";
+    height: 30vw;
+    width: 100%;
+    background-color: rgb(44, 190, 190);
+  }
+  .box4 {
+    border: 1px solid black;
+    grid-area: box4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box5 {
+    border: 1px solid black;
+    grid-area: box5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard {
+    margin-top: 10%;
+  }
+  #box1Image {
+    width: 25vw;
+    height: 25vw;
+  }
+  .info {
+    margin-top: 10%;
+    color: #ffff;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75%;
+    height: fit-content;
+    color: #ffff;
+  }
+}
+
+/*GENERAL STYLES*/
+/* *{
+    --backgroundColor:#191717be;
+     margin: 0;
+    padding: 0;
+}
+body .mobile img{
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+body header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0%;
+    height:180px;
+}
+body header p{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2em;
+    color: #9B2D78;
+    font-weight:600;
+}
+
+article{
+    height: auto;
+    width: 100%;
+}
+article .container1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "box1 box2 box3" ;
+    padding: 0% 2%;
+}
+article .container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "box4 box5" ;
+        padding: 0% 2%;
+}
+
+article .container1 .box1{
+    grid-area: box1;
+    background-color: aqua;
+}
+article .container1 .box2{
+    grid-area: box2;
+    background-color: brown;
+}
+article .container1 .box3{
+    grid-area: box3;
+    background-color: coral;
+}
+
+article .container2 .box4{
+    grid-area: box4;
+    background-color: blue;
+}
+article .container2 .box5{
+    grid-area: box5;
+    background-color: green;
+} */

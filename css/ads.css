@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+    html{
+        scrollbar-color:black;
+    }
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+    body{
+        background-image: url(../img/room.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+.videoPlayer{
+   position: relative;
+   margin-top: 77%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+}
+.videoPlayer #tv{
+    position: relative;
+    left:56px;
+}
+
+}

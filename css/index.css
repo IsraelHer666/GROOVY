@@ -20,6 +20,14 @@
   }
   article .boxes {
     color: #ffff !important;
+
+  }
+  article .boxes a{
+    text-decoration: none;
+  }
+  article .boxes img{
+    height:100%;
+    width: 100%;
   }
   body {
     background-color:var(--backColor);
@@ -79,11 +87,10 @@
     height: 25vw;
     width: 100%;
     padding: 0% 2%;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom:15%;
   }
   .box1 {
-    background-image: url(../img/music.jpg);
-    background-size: cover;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -91,7 +98,6 @@
     grid-area: box1;
   }
   .box2 {
-    background-image: url(../img/movies.jpg);
     background-size: cover;
     border: 1px solid black;
     display: flex;
@@ -100,8 +106,6 @@
     grid-area: box2;
   }
   .box3 {
-    background-image: url(../img/games.jpg);
-    background-size: cover;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -117,11 +121,20 @@
     height: 25vw;
     width: 100%;
     padding: 0% 2%;
-    gap: 10px;
+    gap: 15px;
+  }
+  .titles p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    color: #ffff;
+    text-decoration: none;
+  }
+  .titles a p{
+    text-decoration: none;
+    color: #ffff;
   }
   .box4 {
-    background-image: url(../img/ads.jpg);
-    background-size: cover;
     border: 1px solid black;
     grid-area: box4;
     display: flex;
@@ -129,9 +142,6 @@
     align-items: center;
   }
   .box5 {
-    background-image: url(../img/places.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     border: 1px solid black;
     grid-area: box5;
     display: flex;
@@ -139,8 +149,6 @@
     align-items: center;
   }
   .box6 {
-    background-image: url(../img/technology.jpg);
-    background-size: cover;
     border: 1px solid black;
     grid-area: box6;
     display: flex;
@@ -156,7 +164,7 @@
   }
   .info {
     margin-top: 10%;
-    color: #0d0d0d;
+    color: #ffff;
     font-size: 1.2em;
     text-align: center;
   }
@@ -175,8 +183,10 @@
     height: fit-content;
     color: #ffff;
   }
-  footer i{
-    margin-top: 20%;
+  footer #instaLogo{
+    margin:15% 0%;
+    height:40px;
+    width: 100%;
   }
   footer  .fa-instagram{
     color: aliceblue;

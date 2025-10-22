@@ -16,7 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     --backColor: #12807f;
-    --borderWindow:#bebaba;
+    --borderWindow:#8a8787;
   }
   article .boxes {
     color: #ffff !important;
@@ -49,6 +49,7 @@
     height: 30px;
   }
  .Window .controllers button{
+    color: #070707;
     border-color: black;
     background-color: #c6c6c6;
     height: 25px;

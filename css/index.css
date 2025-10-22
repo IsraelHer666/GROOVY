@@ -49,6 +49,7 @@
     height: 30px;
   }
  .Window .controllers button{
+    border-color: black;
     background-color: #c6c6c6;
     height: 25px;
     width: 25px;

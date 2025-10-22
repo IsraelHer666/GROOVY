@@ -1,29 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+10&display=swap');
 
 @media only screen and (max-width: 600px) {
+    html{
+        scroll-behavior: smooth;
+    }
   .desktop {
     display: none;
   }
   /*mobile styles*/
   * {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --backColor: rgb(0, 0, 0);
+    --backColor: #12807f;
+    --borderWindow:#bebaba;
   }
   article .boxes {
     color: #ffff !important;
   }
   body {
-    background-color: var(--backColor);
-    /* background-image: url(../img/fondo.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-color:var(--backColor);
+    min-height: 100vh;
   }
+  .Window{
+    height: auto;
+    border-right: 30px solid var(--borderWindow);
+    border-bottom: 30px solid var(--borderWindow);
+    border-left: 30px solid var(--borderWindow);
+    min-height: 100vh;    
+  }
+  .Window .controllers{
+    background-color: var(--borderWindow);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+  }
+ .Window .controllers button{
+    background-color: #c6c6c6;
+    height: 25px;
+    width: 25px;
+ }
+  .titleContainer{
+    text-align: center;
+    font-size: 2em;
+    width: 100% ;
+    background-color: #001057;
+    color: #ffff;
+ }
+ .titleContainer2{
+    width: 100% ;
+    color: #0e0e0e;   
+ }
   body .mobile {
     display: flex;
     justify-content: center;
@@ -31,14 +63,7 @@
     flex-direction: column;
     background-color: #070707;
   }
-  body .mobile p {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1.5em;
-    color: #fdf5f5;
-    font-weight: 600;
-    padding-top: 5%;
-    margin-right: 8%;
-  }
+ 
   body .mobile img {
     display: block;
     margin: auto;
@@ -51,11 +76,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "box1  box2    box3";
-    height: 30vw;
+    height: 25vw;
     width: 100%;
-    background-color: rgb(143, 163, 163);
+    padding: 0% 2%;
+    gap: 10px;
   }
   .box1 {
+    background-image: url(../img/music.jpg);
+    background-size: cover;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -63,6 +91,8 @@
     grid-area: box1;
   }
   .box2 {
+    background-image: url(../img/movies.jpg);
+    background-size: cover;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -70,6 +100,8 @@
     grid-area: box2;
   }
   .box3 {
+    background-image: url(../img/games.jpg);
+    background-size: cover;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -78,14 +110,18 @@
   }
 
   .container2 {
+    margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(2, 20);
-    grid-template-areas: "box4  box5";
-    height: 30vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "box4  box5 box6";
+    height: 25vw;
     width: 100%;
-    background-color: rgb(44, 190, 190);
+    padding: 0% 2%;
+    gap: 10px;
   }
   .box4 {
+    background-image: url(../img/ads.jpg);
+    background-size: cover;
     border: 1px solid black;
     grid-area: box4;
     display: flex;
@@ -93,8 +129,20 @@
     align-items: center;
   }
   .box5 {
+    background-image: url(../img/places.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 1px solid black;
     grid-area: box5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box6 {
+    background-image: url(../img/technology.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    grid-area: box6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,16 +156,33 @@
   }
   .info {
     margin-top: 10%;
+    color: #0d0d0d;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .starting{
+    margin-top: 5%;
     color: #ffff;
+    font-size: 1.2em;
+    text-align: center;
   }
   footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75%;
+    flex-direction: column;
+    margin-top: 45%;
     height: fit-content;
     color: #ffff;
   }
+  footer i{
+    margin-top: 20%;
+  }
+  footer  .fa-instagram{
+    color: aliceblue;
+    font-size: 2em;
+  }
+  
 }
 
 /*GENERAL STYLES*/

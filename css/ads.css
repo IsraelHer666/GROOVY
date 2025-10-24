@@ -7,30 +7,36 @@
     padding: 0%;
     margin: 0%;
 }
-
-    body{
-        background-image: url(../img/room.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-}
-.videoPlayer{
-    background-image: url(../img/tvSection.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-   position: relative;
-   margin-top: 77%;
-   height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self:center;
-}
-.videoPlayer #tv{
-    position: relative;
-    left:12%;
-    top: 33%;
+.seccion-videojuegos {
+  /* Establece tu imagen de fondo con la TV aquí */
+  background-image: url('../img/room.jpg');
+  background-size: cover; /* o contain, o un valor específico */
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; /* Muy importante para posicionar el iframe relativo a esta sección */
+  width: 100%; /* O el ancho que necesites */
+  height:100vh; /* O una altura que se ajuste a tu diseño y la imagen */
+  overflow: hidden; /* Para que nada se salga del contenedor */
 }
 
+.tv-screen-container {
+  background-color: rgb(0, 0, 0);
+  padding: 2%;
+  position: absolute; /* Posiciona este contenedor sobre la imagen de fondo */
+  top: 45%; /* Ajusta verticalmente (ej. 35% del contenedor padre) */
+  left: 64%; /* Ajusta horizontalmente (ej. 50% del contenedor padre) */
+  width: 54%; /* Ajusta el ancho (ej. 25% del contenedor padre) */
+  height:18%; /* Ajusta la altura (ej. 20% del contenedor padre) */
+  transform: translate(-50%, -50%); /* Centra el elemento si usas left: 50%; top: 50%; */
+  
+  /* Puedes añadir un pequeño borde si quieres simular el marco de la pantalla */
+  /* border: 2px solid #333; */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */ /* O un brillo sutil */
+}
+
+.tv-screen-container iframe {
+  width: 100%; /* El iframe ocupa el 100% del contenedor .tv-screen-container */
+  height: 100%;
+  display: block; /* Elimina espacio extra que algunos navegadores añaden */
+}
 }

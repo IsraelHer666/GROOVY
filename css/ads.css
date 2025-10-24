@@ -20,13 +20,12 @@
 }
 
 .tv-screen-container {
-  background-color: rgb(0, 0, 0);
-  padding: 2%;
+  border-radius: 15px;
   position: absolute; /* Posiciona este contenedor sobre la imagen de fondo */
-  top: 45%; /* Ajusta verticalmente (ej. 35% del contenedor padre) */
+  top: 44.6%; /* Ajusta verticalmente (ej. 35% del contenedor padre) */
   left: 64%; /* Ajusta horizontalmente (ej. 50% del contenedor padre) */
-  width: 54%; /* Ajusta el ancho (ej. 25% del contenedor padre) */
-  height:18%; /* Ajusta la altura (ej. 20% del contenedor padre) */
+  width: 45%; /* Ajusta el ancho (ej. 25% del contenedor padre) */
+  height:17%; /* Ajusta la altura (ej. 20% del contenedor padre) */
   transform: translate(-50%, -50%); /* Centra el elemento si usas left: 50%; top: 50%; */
   
   /* Puedes añadir un pequeño borde si quieres simular el marco de la pantalla */
@@ -39,4 +38,16 @@
   height: 100%;
   display: block; /* Elimina espacio extra que algunos navegadores añaden */
 }
-}
+
+
+@media only screen and (width: 375px) {
+    body{
+        background-image: url(../img/places.jpg);
+    }
+    .tv-screen-container {
+        top: 45.6%; /* Ajusta verticalmente (ej. 35% del contenedor padre) */
+        left: 64%; /* Ajusta horizontalmente (ej. 50% del contenedor padre) */
+        width: 45%; /* Ajusta el ancho (ej. 25% del contenedor padre) */
+        height:17%; /* Ajusta la altura (ej. 20% del contenedor padre) */
+    }
+}}

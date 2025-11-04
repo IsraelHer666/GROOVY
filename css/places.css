@@ -1,0 +1,137 @@
+/* INITIAL CONFIG */
+:root{
+    /* Creating variables */
+    --backGround:#f2d8a5;
+    --shadowColor:#7c4f07;
+}
+@font-face {
+  font-family: 'Manuscrito'; /* El nombre que le das a la fuente */
+  src: url('/assets/fonts/autography/Autography.otf') format('woff2'),
+       url('fuentes/mi-fuente.woff') format('woff'),
+       url('fuentes/mi-fuente.ttf') format('truetype');
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+
+
+/* TITLE SECTION */
+.container  h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+/* CONTENT SECTION */
+
+body{
+    background-color:var(--backGround);
+    height: 100vh
+}
+
+body article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--backGround);
+    width:100%;
+    height: 100vh;
+}
+body article .container{
+    font-family:Manuscrito;
+    padding: 2%;
+    background-image: url(../img/fondoHoja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 96%;
+    height:100vh;
+    box-shadow: 0px 0px 10px var(--shadowColor);
+
+}
+
+/* PHOTOS CONTAINER */
+
+.photosContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+}
+.photo img{
+    height: 20vh;
+}
+.photo2 img{
+    height: 20vh;
+}
+.photo3 img{
+    height: 20vh;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+    height: 25vh;
+    width:100%;
+}
+.photo2{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    height: 25vh;
+}
+.photo3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.PhotoFooter1{
+    margin-top: 1% 0%;
+    position: relative;
+    right:35px;
+}
+.PhotoFooter2{
+    margin-top: 1% 0%;
+    position: relative;
+    left:50px;
+}
+.PhotoFooter3{
+    margin-top: 1% 0%;
+    position: relative;
+    right:35px;
+}
+
+
+/* Next Button */
+
+.buttonContainer{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nextButton{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:2%;
+    text-align: center;
+    background-color: rgb(246, 198, 4);
+    width:28vw;
+    border-style: solid;
+    border-radius:10px;
+    border-color: #7c4f07;
+}
